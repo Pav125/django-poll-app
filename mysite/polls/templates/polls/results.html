@@ -11,6 +11,9 @@
     <ul>
     {% for choice in question.choice_set.all %}
         <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+        {% comment %} This part uses the pluralize template filter to automatically add an "s" to 
+        the word "vote" if choice.votes is greater than 1. It's a Django template filter that helps 
+        handle pluralization in templates. {% endcomment %}
     {% endfor %}
     </ul>
 
