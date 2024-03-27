@@ -4,7 +4,7 @@ from django.template import loader
 
 from .models import Question
 
-'''Each view is resposible for doing one of two things: returning an HttpResponse 
+'''Each view is responsible for doing one of two things: returning an HttpResponse 
  object containing the content for the rquested page, or raising an exception such as 
  Http404.'''
 
